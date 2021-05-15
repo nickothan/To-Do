@@ -31,6 +31,10 @@ export const TaskContainer = styled.li`
         padding: 0;
     }
 
+    h4 {
+        font-weight: 500;
+    }
+
     .state {
         width: 16px;
         height: 16px;

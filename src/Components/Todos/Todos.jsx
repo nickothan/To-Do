@@ -1,6 +1,8 @@
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleToDo } from "../../app/Slice/todosSlice";
 import { ToDoContainer, TaskContainer } from "./styles";
+import { filters } from "../../consts";
 
 const Task = ({ id, title, description, completed }) => {
     const dispatch = useDispatch();
@@ -22,14 +24,32 @@ const Task = ({ id, title, description, completed }) => {
 };
 
 export default function Todos() {
-    const todos = useSelector((store) => store.todos);
+    const [selectedTodos, setSelectedTodos] = useState([]);
+    const { todos, filter } = useSelector((store) => store);
+
+    useEffect(() => {
+        switch (filter) {
+            case filters.ALL:
+                setSelectedTodos(todos);
+                break;
+            case filters.IN_PROGRESS:
+                setSelectedTodos(todos.filter((task) => !task.completed));
+                break;
+            case filters.COMPLETED:
+                setSelectedTodos(todos.filter((task) => task.completed));
+                break;
+
+            default:
+                setSelectedTodos([]);
+                break;
+        }
+    }, [filter, todos]);
 
     return (
         <ToDoContainer>
-            {todos.map((props) => {
-                //console.log("Args: ", args);
-                return <Task key={props.id} {...props} />;
-            })}
+            {selectedTodos.map((props) => (
+                <Task key={props.id} {...props} />
+            ))}
         </ToDoContainer>
     );
 }

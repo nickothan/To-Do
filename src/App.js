@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Todos from "./Components/Todos/Todos";
 import Footer from "./Components/Footer/Footer";
 import AddToDo from "./Components/AddToDo/AddToDo";
+import Filter from "./Components/Filters/Filters";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Header />
             <div className="main-container">
                 <AddToDo />
+                <Filter />
                 <Todos />
             </div>
             <Footer />
