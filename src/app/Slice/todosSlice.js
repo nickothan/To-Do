@@ -3,8 +3,26 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
     {
         id: 1,
-        title: "First task",
-        description: "clean home.",
+        title: "Lavar platos",
+        description: "Lavar platos.",
+        completed: true,
+    },
+    {
+        id: 2,
+        title: "Tender la cama",
+        description: "Tender la cama.",
+        completed: true,
+    },
+    {
+        id: 3,
+        title: "Barrer",
+        description: "Barrer toda la casa.",
+        completed: false,
+    },
+    {
+        id: 4,
+        title: "Hacer compras",
+        description: "Leche, pan, huevos, avena.",
         completed: false,
     },
 ];
