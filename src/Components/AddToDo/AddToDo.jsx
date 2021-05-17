@@ -32,6 +32,7 @@ export default function AddToDo() {
                             type="text"
                             name="title"
                             value={title}
+                            placeholder="title"
                             onChange={(e) => setTitle(e.target.value)}
                         />
                     </div>
@@ -41,6 +42,7 @@ export default function AddToDo() {
                             type="text"
                             name="description"
                             value={description}
+                            placeholder="description"
                             onChange={(e) => setDescription(e.target.value)}
                         />
                     </div>

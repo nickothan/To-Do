@@ -1,27 +1,10 @@
 import { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { toggleToDo } from "../../app/Slice/todosSlice";
-import { ToDoContainer, TaskContainer } from "./styles";
+import { useSelector } from "react-redux";
+import { ToDoContainer } from "./styles";
 import { filters } from "../../consts";
+import Task from "./Task/Task";
 
-const Task = ({ id, title, description, completed }) => {
-    const dispatch = useDispatch();
-    return (
-        <TaskContainer completed={completed}>
-            <div
-                className="state"
-                onClick={() => {
-                    dispatch(toggleToDo(id));
-                    console.log("Prueba");
-                }}
-            />
-            <div>
-                <h3>{title}</h3>
-                <h4>{description}</h4>
-            </div>
-        </TaskContainer>
-    );
-};
+//import { ReactComponent as TrashIcon } from "../../assets/Trash.jpg";
 
 export default function Todos() {
     const [selectedTodos, setSelectedTodos] = useState([]);

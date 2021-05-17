@@ -19,22 +19,33 @@ export const AddToDoContainer = styled.div`
             margin-bottom: 5px;
         }
     }
-
-    .add-button {
-        margin: 0 20px;
+    input {
+        background-color: white;
+        border-radius: 8px;
         padding: 7px 8px;
-        background-color: royalblue;
         border: 0;
-        box-shadow: 0 2px 2px blue;
-        border-radius: 3px;
-        cursor: pointer;
+        box-shadow: inset 8px 8px 20px #cbced1, inset -8px -8px 20px #fff;
+        outline: none;
+    }
+}
 
-        &:hover {
-            box-shadow: 0 2px 5px blue;
-        }
+.add-button {
+    margin: 0 20px;
+    padding: 7px 8px;
+    background-color: royalblue;
+    color: white;
+    border: 0;
+    box-shadow: 0 2px 2px blue;
+    border-radius: 3px;
+    cursor: pointer;
 
-        &:active {
-            box-shadow: none;
-        }
+    &:hover {
+        box-shadow: 0 2px 5px blue;
+    }
+
+    &:active {
+        color: beige;
+        box-shadow: none;
+        box-shadow: 0 2px 2px blue, inset 0 0 10px blue, inset 0 0 10px blue;
     }
 `;
