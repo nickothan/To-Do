@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render App 1`] = `
+<div>
+  <div
+    class="app-container"
+  >
+    <div
+      class="styles__Content-sc-1gyputh-0 iCyzVi"
+    >
+      <h1>
+        TO DO
+      </h1>
+    </div>
+    <div
+      class="main-container"
+    >
+      <div
+        class="styles__AddToDoContainer-sc-1vk1f0m-0 cOKVKe"
+      >
+        <form>
+          <div
+            class="fields-container"
+          >
+            <div
+              class="field-container"
+            >
+              <label
+                for="title"
+              >
+                Title 
+              </label>
+              <input
+                name="title"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="field-container"
+            >
+              <label
+                for="description"
+              >
+                Description 
+              </label>
+              <input
+                name="description"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <button
+            class="add-button"
+            type="submit"
+          >
+            Add
+          </button>
+        </form>
+      </div>
+      <div
+        class="styles__FilterContainer-i9tlor-0 fVVDMB"
+      >
+        <button>
+          All
+        </button>
+        <button>
+          In progress
+        </button>
+        <button>
+          Completed
+        </button>
+      </div>
+      <ul
+        class="styles__ToDoContainer-oe1vjm-0 fEbiID"
+      >
+        <li
+          class="styles__TaskContainer-oe1vjm-1 cWqshv"
+        >
+          <div
+            class="state"
+          />
+          <div>
+            <h3>
+              Lavar platos
+            </h3>
+            <h4>
+              Lavar platos.
+            </h4>
+          </div>
+        </li>
+        <li
+          class="styles__TaskContainer-oe1vjm-1 cWqshv"
+        >
+          <div
+            class="state"
+          />
+          <div>
+            <h3>
+              Tender la cama
+            </h3>
+            <h4>
+              Tender la cama.
+            </h4>
+          </div>
+        </li>
+        <li
+          class="styles__TaskContainer-oe1vjm-1 dWKOpq"
+        >
+          <div
+            class="state"
+          />
+          <div>
+            <h3>
+              Barrer
+            </h3>
+            <h4>
+              Barrer toda la casa.
+            </h4>
+          </div>
+        </li>
+        <li
+          class="styles__TaskContainer-oe1vjm-1 dWKOpq"
+        >
+          <div
+            class="state"
+          />
+          <div>
+            <h3>
+              Hacer compras
+            </h3>
+            <h4>
+              Leche, pan, huevos, avena.
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div />
+  </div>
+</div>
+`;
