@@ -6,6 +6,7 @@ export const AddToDoContainer = styled.div`
 
     form {
         display: flex;
+        align-items: center;
     }
 
     .fields-container {
@@ -31,7 +32,8 @@ export const AddToDoContainer = styled.div`
 
 .add-button {
     margin: 0 20px;
-    padding: 7px 8px;
+    padding: 8px;
+    height: 30px;
     background-color: royalblue;
     color: white;
     border: 0;

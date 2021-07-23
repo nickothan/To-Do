@@ -8,3 +8,11 @@ export const ToDoContainer = styled.ul`
     box-shadow: 0 0 3px blue;
     list-style: none;
 `;
+
+export const Botones = styled.div`
+    button {
+        padding: 5px 10px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+`;
