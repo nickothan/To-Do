@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro'
 
 export const AddToDoContainer = styled.div`
     display: flex;
@@ -6,46 +6,62 @@ export const AddToDoContainer = styled.div`
 
     form {
         display: flex;
-    }
+        padding: 30px 60px;
+        background-color: rgb(255, 255, 204);
+        box-shadow: yellow 0px 0px 5px 2px;
+        border-radius: 8px;
 
-    .fields-container {
     }
 
     .field-container {
         display: grid;
-        grid-template-columns: 100px 200px;
-
-        &:first-child {
-            margin-bottom: 5px;
-        }
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
     }
+
+    label {
+        color: black;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
     input {
-        background-color: white;
-        border-radius: 8px;
-        padding: 7px 8px;
-        border: 0;
-        box-shadow: inset 8px 8px 20px #cbced1, inset -8px -8px 20px #fff;
+        background-color: transparent;
+        padding-top: 5px;
         outline: none;
+        color: black;
+        border: none;
+        border-bottom: 2px solid royalblue;
+    }
+
+    input[type=textarea] {
+
+    }
+
+    input::placeholder {
+        background-color: transparent;
+        outline: none;
+        color: black;
+        border: none;
+        padding-top: 0%;;
+
     }
 }
 
 .add-button {
-    margin: 0 20px;
-    padding: 7px 8px;
-    background-color: royalblue;
-    color: white;
-    border: 0;
-    box-shadow: 0 2px 2px blue;
-    border-radius: 3px;
-    cursor: pointer;
+    
+    background-color: #1abc9c;
+    box-shadow: 0 2px 6px 0 rgb(26 188 156 / 50%);
 
     &:hover {
-        box-shadow: 0 2px 5px blue;
+    background-color: #16a085;
+    border-color: #15967d;
     }
 
     &:active {
-        color: beige;
-        box-shadow: none;
-        box-shadow: 0 2px 2px blue, inset 0 0 10px blue, inset 0 0 10px blue;
+           color: #fff;
+    background-color: #15967d;
+    border-color: #148d75;
+    
     }
-`;
+`
