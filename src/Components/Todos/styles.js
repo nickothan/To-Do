@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const ToDoContainer = styled.ul`
+
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
@@ -15,4 +16,15 @@ export const ToDoContainer = styled.ul`
     width: 100%;
     overflow: hidden;
   }
-`
+`;
+
+export const Botones = styled.div`
+    button {
+        padding: 5px 10px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+`;
+
+
+
