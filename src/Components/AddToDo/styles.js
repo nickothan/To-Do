@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled from "styled-components/macro";
 
 export const AddToDoContainer = styled.div`
     display: flex;
@@ -6,13 +6,10 @@ export const AddToDoContainer = styled.div`
 
     form {
         display: flex;
-
         padding: 30px 60px;
-        background-color: rgb(255, 255, 204);
-        box-shadow: yellow 0px 0px 5px 2px;
+        background-color: rgb(255 255 204 / 40%);
+        box-shadow: #19bc9b 0px 0px 5px 2px;
         border-radius: 8px;
-
-
     }
 
     .field-container {
@@ -23,7 +20,6 @@ export const AddToDoContainer = styled.div`
 
     label {
         color: black;
-        margin-left: 10px;
         font-weight: 600;
     }
 
@@ -33,7 +29,7 @@ export const AddToDoContainer = styled.div`
         outline: none;
         color: black;
         border: none;
-        border-bottom: 2px solid royalblue;
+        border-bottom: 2px solid #19bc9b;
     }
 
     input[type=textarea] {
@@ -51,7 +47,6 @@ export const AddToDoContainer = styled.div`
 }
 
 .add-button {
-
     background-color: #1abc9c;
     box-shadow: 0 2px 6px 0 rgb(26 188 156 / 50%);
 
@@ -64,6 +59,5 @@ export const AddToDoContainer = styled.div`
            color: #fff;
     background-color: #15967d;
     border-color: #148d75;
-    
     }
-`
+`;

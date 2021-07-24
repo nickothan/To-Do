@@ -13,12 +13,12 @@ code {
 }
 
 .app-container {
-  background-color: #87ceeb7d;
+  background-color: rgb(135 206 235 / 71%);
   min-height: 100vh;
 }
 
 .main-container {
-  padding: 20px;
+  padding: 10px;
 }
 
 .btn {
@@ -33,4 +33,5 @@ code {
   border: 0;
   border-radius: 0.2rem;
   cursor: pointer;
+  transition: all 0.25s linear;
 }

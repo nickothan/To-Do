@@ -1,11 +1,14 @@
-import styled from 'styled-components/macro'
+import styled from "styled-components/macro";
 
 export const TaskContainer = styled.li`
   display: grid;
-  grid-template-columns: 50px 1fr 40px;
+  grid-template-columns: 50px 1fr 27px;
   align-items: center;
-  box-shadow: 0 0 3px royalblue;
-  padding: 8px;
+  padding: 8px 20px;
+  background-color: rgb(255 255 204 / 40%);
+  box-shadow: rgb(255 255 204 / 40%) 0px 0px 1px 2px;
+  margin-bottom: 10px;
+  border-radius: 3px;
 
   transition-duration: 120ms;
 
@@ -38,7 +41,7 @@ export const TaskContainer = styled.li`
             background-color: darkgreen;
         `}
   }
-`
+`;
 
 export const RemoveButton = styled.button`
   display: flex;
@@ -50,12 +53,13 @@ export const RemoveButton = styled.button`
   background-color: red;
   border: 0;
   border-radius: 50%;
-  background-color: #ff000080;
-  box-shadow: 0 0px 6px 3px #ffae00;
+  background-color: rgb(232 136 138);
+  box-shadow: rgb(232 136 138) 0px 0px 6px 1px;
   cursor: pointer;
+  transition: all 0.25s linear;
 
   &:hover {
-    box-shadow: 0 0px 2px 1px #ffae00;
+    box-shadow: 0 0px 2px 1px rgb(232 136 138);
   }
 
   &:active {
@@ -65,4 +69,4 @@ export const RemoveButton = styled.button`
   svg {
     fill: #292828;
   }
-`
+`;
