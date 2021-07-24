@@ -1,12 +1,9 @@
-import styled from 'styled-components/macro'
+import styled from "styled-components/macro";
 
 export const ToDoContainer = styled.ul`
-
   max-width: 400px;
-  margin: 50px auto;
+  margin: 15px auto;
   padding: 20px;
-  background-color: rgb(255, 255, 204);
-  box-shadow: yellow 0px 0px 5px 2px;
   border-radius: 3px;
   border: 1 solid black;
 
@@ -19,12 +16,9 @@ export const ToDoContainer = styled.ul`
 `;
 
 export const Botones = styled.div`
-    button {
-        padding: 5px 10px;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
+  button {
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
 `;
-
-
-

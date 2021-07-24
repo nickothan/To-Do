@@ -8,14 +8,14 @@ export const FilterContainer = styled.div`
   button {
     margin: 0 5px;
     padding: 12px;
-    background-color: lightgreen;
     border: 0;
-    box-shadow: 0 2px 2px gold;
+    background-color: #19bc9b;
+    box-shadow: #19bc9bba 0px 2px 2px;
     border-radius: 3px;
     cursor: pointer;
 
     &:hover {
-      box-shadow: 0 2px 8px gold;
+      box-shadow: #19bc9b 0px 2px 8px;
     }
 
     &:active {
