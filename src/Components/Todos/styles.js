@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro'
 
 export const ToDoContainer = styled.ul`
   max-width: 400px;
@@ -10,10 +10,10 @@ export const ToDoContainer = styled.ul`
   list-style: none;
 
   h4 {
-    width: 100%;
+    width: 95%;
     overflow: hidden;
   }
-`;
+`
 
 export const Botones = styled.div`
   button {
@@ -21,4 +21,4 @@ export const Botones = styled.div`
     border-radius: 8px;
     margin-right: 10px;
   }
-`;
+`

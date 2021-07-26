@@ -1,8 +1,8 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro'
 
 export const TaskContainer = styled.li`
   display: grid;
-  grid-template-columns: 50px 1fr 27px;
+  grid-template-columns: 30px 1fr 27px;
   align-items: center;
   padding: 8px 20px;
   background-color: rgb(255 255 204 / 40%);
@@ -22,6 +22,7 @@ export const TaskContainer = styled.li`
     h4 {
     margin: 0;
     padding: 0;
+    word-break: break-word;
   }
 
   h4 {
@@ -41,7 +42,7 @@ export const TaskContainer = styled.li`
             background-color: darkgreen;
         `}
   }
-`;
+`
 
 export const RemoveButton = styled.button`
   display: flex;
@@ -69,4 +70,4 @@ export const RemoveButton = styled.button`
   svg {
     fill: #292828;
   }
-`;
+`
