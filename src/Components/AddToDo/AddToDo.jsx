@@ -4,10 +4,13 @@ import { addToDo } from '../../app/Slice/todosSlice'
 
 import { AddToDoContainer } from './styles'
 
+import  Modal  from '../Modal'
+
 export default function AddToDo() {
   const dispatch = useDispatch()
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (e) => {
     e.preventDefault()
@@ -20,8 +23,12 @@ export default function AddToDo() {
         completed: false
       })
     )
+    setIsOpen(true)
   }
 
+  const dontRemoveTask = () => {
+    setIsOpen(false);
+};
   return (
     <AddToDoContainer>
       <form onSubmit={handleChange}>
@@ -49,6 +56,7 @@ export default function AddToDo() {
           Add
         </button>
       </form>
+      <Modal isOpen={isOpen} handleClose={dontRemoveTask}>task added successfully.</Modal>
     </AddToDoContainer>
   )
 }

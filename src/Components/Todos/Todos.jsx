@@ -4,7 +4,7 @@ import { removeToDo } from "../../app/Slice/todosSlice";
 import { ToDoContainer, Botones } from "./styles";
 import { filters } from "../../consts";
 import Task from "./Task/Task";
-import Modal from "../Modal";
+import  Modal from "../Modal";
 
 //import { ReactComponent as TrashIcon } from "../../assets/Trash.jpg";
 
